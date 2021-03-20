@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
+<body class="registrar">
     <div id="main-container">
         <h1 class="tituloCadastro">Cadastre-se para acessar o sistema</h1>
         <from action="" method="" id="register-form">
@@ -20,19 +20,23 @@
             </div>
             <div class="half-box">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="half-box-lastname">                
                 <label for="sobrenome">Sobrenome</label>
                 <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
             </div>
-            <div class="half-box">
+            <div class="half-box-password">
                 <label for="password">Senha</label>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                <label for="password">Confirmação da senha</label>
+            </div>
+            <div class="half-box-password-c">
+                <label for="password">Repita sua senha</label>
                 <input type="password" name="password" id="password" placeholder="Digite novamente sua senha">
             </div>
             <div class="full-box"> 
                 <input type="checkbox" name="agreement" id="agreement">
-                <label id="agreement-label" for="agreement">Eu li e aceitos <a src="#">termos de uso</a></label>                
+                <label id="agreement-label" for="agreement">Eu li e aceitos <a src="#">termos de uso</a>.</label>                
             </div>    
             <input type="submit" value="Registrar">
         </from>
@@ -43,5 +47,5 @@
         </div>
     </div>    
 </body>
-<script src-"js/script.js"></script>
+<script src-"../js/script.js"></script>
 </html>

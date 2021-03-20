@@ -10,7 +10,7 @@
 } 
 
 body {
-    /*background-image: url("../img/2927262.jpg");*/
+    background-image: url("../img/2927262.jpg");
     background-size: cover;
     background-position-y: -200px;
 }
@@ -122,13 +122,19 @@ input[type="submit"]:hover {
 
 /* Pagina Registrar*/
 
+.registrar {
+    background-image: url("../img/geometric.jpg");
+    background-size: cover;
+    background-position-y: -180px;
+}
+
 #main-container {
     background-image: linear-gradient(to right, hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%)); /*cor do container */
     width: 600px; /* tamanho do container */
     margin-left: auto; 
     margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
     padding: 35px; /* espaçamento */
-    margin-top: 6vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+    margin-top: 3vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
     border-radius: 4px 145px; /* arrendoda as bordas */
     text-align: center; /*alinhar texto no centro */
     border:10px solid #042848; /* cor da borda */
@@ -154,11 +160,60 @@ input[type="submit"]:hover {
     flex: 1 1 45%;
     position: relative;
     padding: 8px;
-    
 }
 
+.half-box-lastname {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+}
+
+.half-box-password {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+}
+
+.half-box-password-c {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+}
+
+    
+/* .half-box-password {
+    position: relative;
+    float: left;
+    width: 250px;
+}
+
+.half-box-password-c {
+    position: relative;
+    float: right;
+    width: 250px;
+}*/
+
 a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    color: #042848;
     text-decoration: underline;
     cursor: pointer;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* validação */
+
+.error {
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
 }
