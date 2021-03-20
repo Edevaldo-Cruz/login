@@ -1,4 +1,4 @@
-/* Configuração Geral*/
+/* Configuração Geral */
 
 * {
     margin: 0;
@@ -7,10 +7,10 @@
     font-family: 'Open Sans Condensed', sans-serif;
     color: #323232;
     border: none;
-}
+} 
 
 body {
-    background-image: url("../img/2927262.jpg");
+    /*background-image: url("../img/2927262.jpg");*/
     background-size: cover;
     background-position-y: -200px;
 }
@@ -118,4 +118,47 @@ input[type="submit"]:hover {
 
 #register-container p {
     margin-bottom: 10px;
+}
+
+/* Pagina Registrar*/
+
+#main-container {
+    background-image: linear-gradient(to right, hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%)); /*cor do container */
+    width: 600px; /* tamanho do container */
+    margin-left: auto; 
+    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
+    padding: 35px; /* espaçamento */
+    margin-top: 6vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+    border-radius: 4px 145px; /* arrendoda as bordas */
+    text-align: center; /*alinhar texto no centro */
+    border:10px solid #042848; /* cor da borda */
+    font-size: 1.2rem;
+}
+
+.tituloCadastro {
+    font-size: 2.5rem;
+}
+
+#register-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;    
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+    
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    cursor: pointer;
 }

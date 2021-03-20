@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="tituloCadastro">Cadastre-se para acessar o sistema</h1>
+        <from action="" method="" id="register-form">
+            <div class="full-box"> 
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="half-box">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="half-box">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                <label for="password">Confirmação da senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite novamente sua senha">
+            </div>
+            <div class="full-box"> 
+                <input type="checkbox" name="agreement" id="agreement">
+                <label id="agreement-label" for="agreement">Eu li e aceitos <a src="#">termos de uso</a></label>                
+            </div>    
+            <input type="submit" value="Registrar">
+        </from>
+        <div id="social-container">
+            <p>Ou entre pelas suas redes sociais</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>            
+        </div>
+    </div>    
+</body>
+<script src-"js/script.js"></script>
+</html>
