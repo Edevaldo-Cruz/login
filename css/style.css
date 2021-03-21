@@ -125,7 +125,7 @@ input[type="submit"]:hover {
 .registrar {
     background-image: url("../img/geometric.jpg");
     background-size: cover;
-    background-position-y: -180px;
+    /*background-position-y: -180px;*/
 }
 
 #main-container {
@@ -205,15 +205,43 @@ a {
     width: auto;
 }
 
-/* validação */
+/* Pagina Esqueci minha senha */
 
-.error {
-    color: red;
-    position: absolute;
-    top: 57px;
-    font-size: .8rem;
+.esqueci {   
+    background-image: url("../img/esqueci.png");
+    background-size: cover;
+    background-position-y: -20px;
 }
 
-.template {
-    display: none;
+/* Pagina Termo*/
+
+.termo {
+    background-image: url("../img/2927262.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+
+.container-termo {
+    background-image: linear-gradient(to right, hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%)); /*cor do container */
+    width: 600px; /* tamanho do container */
+    margin-left: auto; 
+    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
+    padding: 35px; /* espaçamento */
+    margin-top: 3vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+    border-radius: 4px 145px; /* arrendoda as bordas */
+    text-align: center; /*alinhar texto no centro */
+    border:10px solid #042848; /* cor da borda */
+    font-size: 1.2rem;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.termo p {
+    text-align: justify;
+    padding: 12px;
 }
