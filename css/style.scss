@@ -1,0 +1,241 @@
+//Cores do Site//
+$cor_container: hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%);
+$azul_padrao: #08558b;
+$cor_texto: #323232;
+$cor_fundo_formulario: #FFF;
+$cor_facebook: #3B5998;
+$cor_linkedin: #0077b5;
+$cor_borda:  #042848;
+$cor_hover_botao: #1b223c;
+$cor_fonte_rede_social: #fff;
+$cor_link_termo: #042848;
+
+%container_padrao {
+    background-image: linear-gradient(to right, $cor_container);    
+    margin-left: auto;
+    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
+    padding: 20px 30px;
+    border-radius: 4px 175px; /* arrendoda as bordas */
+    text-align: center; 
+    border:10px solid $cor_borda;
+}
+
+%formulario {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+}
+
+%complemento_formulario {
+    width: 600px;
+    font-size: 1.2rem;
+    padding: 35px; /* espaçamento */
+    margin-top: 3vh; /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
+}
+
+
+/* Configuração Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: $cor_texto;
+    border: none;
+} 
+
+body {
+    background-image: url("../img/2927262.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: $azul_padrao;
+}
+
+/* container login*/
+
+#login-container {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+}
+
+/* formulario */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+label, input {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 4px solid $cor_texto;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;    
+}
+
+input:focus {
+    border-bottom: 2px solid $azul_padrao;
+    ;    
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;    
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: $cor_fundo_formulario;
+    background-color: $azul_padrao;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: $cor_hover_botao;
+    transition: .5;    
+}
+
+/* redes social*/
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: $cor_fonte_rede_social;
+    margin: 15px 8px;
+    cursor: pointer;    
+}
+
+.fa-facebook {
+    background-color: $cor_facebook;    
+}
+
+.fa-linkedin {
+    background-color: $cor_linkedin;
+}
+
+/*registro*/
+
+#register-container p {
+    margin-bottom: 10px;
+}
+
+/* Pagina Registrar*/
+
+.registrar {
+    background-image: url("../img/geometric.jpg");
+    background-size: cover;
+    /*background-position-y: -180px;*/
+}
+
+#main-container {
+    @extend %container_padrao;
+    @extend %complemento_formulario;
+}
+
+.tituloCadastro {
+    font-size: 2.5rem;
+}
+
+#register-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;    
+}
+
+.half-box {
+    @extend %formulario
+}
+
+.half-box-lastname {
+    @extend %formulario
+}
+
+.half-box-password {
+    @extend %formulario
+}
+
+.half-box-password-c {
+    @extend %formulario
+}
+    
+a {
+    font-size: 1.2rem;
+    color: $cor_link_termo;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* Pagina Esqueci minha senha */
+
+.esqueci {   
+    background-image: url("../img/esqueci.png");
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+/* Pagina Termo*/
+
+.termo {
+    background-image: url("../img/2927262.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+
+.container-termo {
+    @extend %container_padrao;
+    @extend %complemento_formulario
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.termo p {
+    text-align: justify;
+    padding: 12px;
+}

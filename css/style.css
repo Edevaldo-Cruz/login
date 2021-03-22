@@ -1,247 +1,209 @@
-/* Configuração Geral */
+@charset "UTF-8";
+#login-container, #main-container, .container-termo {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c5e2fc), color-stop(#fff), to(#c5e2fc));
+  background-image: linear-gradient(to right, #c5e2fc, #fff, #c5e2fc);
+  margin-left: auto;
+  margin-right: auto;
+  /* Margin left e right centraliza o elemento no centor da tela.*/
+  padding: 20px 30px;
+  border-radius: 4px 175px;
+  /* arrendoda as bordas */
+  text-align: center;
+  border: 10px solid #042848;
+}
 
+.half-box, .half-box-lastname, .half-box-password, .half-box-password-c {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  position: relative;
+  padding: 8px;
+}
+
+#main-container, .container-termo {
+  width: 600px;
+  font-size: 1.2rem;
+  padding: 35px;
+  /* espaçamento */
+  margin-top: 3vh;
+  /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
+}
+
+/* Configuração Geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #323232;
-    border: none;
-} 
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #323232;
+  border: none;
+}
 
 body {
-    background-image: url("../img/2927262.jpg");
-    background-size: cover;
-    background-position-y: -200px;
+  background-image: url("../img/2927262.jpg");
+  background-size: cover;
+  background-position-y: -200px;
 }
 
 textarea:focus, input:focus {
-    outline: none;
+  outline: none;
 }
 
 a {
-    font-size: .8rem;
+  font-size: .8rem;
 }
 
 a:hover {
-    color: #08558b;
+  color: #08558b;
 }
 
 /* container login*/
-
 #login-container {
-    background-image: linear-gradient(to right,  hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%));
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
-    padding: 20px 30px;
-    margin-top: 10vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
-    border-radius: 4px 175px; /* arrendoda as bordas */
-    text-align: center; 
-    border:10px solid #042848;
+  width: 400px;
+  margin-top: 10vh;
+  /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
 }
 
 /* formulario */
-
 form {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 label, input {
-    border-radius: 20px;
-    display: block;
-    width: 100%;
-    text-align: left;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input {
-    border-bottom: 4px solid #323232;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;    
+  border-bottom: 4px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 input:focus {
-    border-bottom: 2px solid #08558b;    
+  border-bottom: 2px solid #08558b;
 }
 
 #forgot-pass {
-    text-align: right;
-    display: block;    
+  text-align: right;
+  display: block;
 }
 
 input[type="submit"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color:#fff;
-    background-color: #08558b;
-    cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #FFF;
+  background-color: #08558b;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #1b223c;
-    transition: .5;    
+  background-color: #1b223c;
+  -webkit-transition: .5;
+  transition: .5;
 }
 
 /* redes social*/
-
 #social-container i {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    color: #FFF;
-    margin: 15px 8px;
-    cursor: pointer;    
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #fff;
+  margin: 15px 8px;
+  cursor: pointer;
 }
 
 .fa-facebook {
-    background-color: #3B5998;    
+  background-color: #3B5998;
 }
 
 .fa-linkedin {
-    background-color: #0077b5;
+  background-color: #0077b5;
 }
 
 /*registro*/
-
 #register-container p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Pagina Registrar*/
-
 .registrar {
-    background-image: url("../img/geometric.jpg");
-    background-size: cover;
-    /*background-position-y: -180px;*/
-}
-
-#main-container {
-    background-image: linear-gradient(to right, hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%)); /*cor do container */
-    width: 600px; /* tamanho do container */
-    margin-left: auto; 
-    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
-    padding: 35px; /* espaçamento */
-    margin-top: 3vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
-    border-radius: 4px 145px; /* arrendoda as bordas */
-    text-align: center; /*alinhar texto no centro */
-    border:10px solid #042848; /* cor da borda */
-    font-size: 1.2rem;
+  background-image: url("../img/geometric.jpg");
+  background-size: cover;
+  /*background-position-y: -180px;*/
 }
 
 .tituloCadastro {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 #register-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .full-box {
-    flex: 1 1 100%;
-    position: relative;    
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  position: relative;
 }
-
-.half-box {
-    flex: 1 1 45%;
-    position: relative;
-    padding: 8px;
-}
-
-.half-box-lastname {
-    flex: 1 1 45%;
-    position: relative;
-    padding: 8px;
-}
-
-.half-box-password {
-    flex: 1 1 45%;
-    position: relative;
-    padding: 8px;
-}
-
-.half-box-password-c {
-    flex: 1 1 45%;
-    position: relative;
-    padding: 8px;
-}
-
-    
-/* .half-box-password {
-    position: relative;
-    float: left;
-    width: 250px;
-}
-
-.half-box-password-c {
-    position: relative;
-    float: right;
-    width: 250px;
-}*/
 
 a {
-    font-size: 1.2rem;
-    color: #042848;
-    text-decoration: underline;
-    cursor: pointer;
+  font-size: 1.2rem;
+  color: #042848;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #agreement, #agreement-label {
-    display: inline-block;
-    width: auto;
+  display: inline-block;
+  width: auto;
 }
 
 /* Pagina Esqueci minha senha */
-
-.esqueci {   
-    background-image: url("../img/esqueci.png");
-    background-size: cover;
-    background-position-y: -20px;
+.esqueci {
+  background-image: url("../img/esqueci.png");
+  background-size: cover;
+  background-position-y: -20px;
 }
 
 /* Pagina Termo*/
-
 .termo {
-    background-image: url("../img/2927262.jpg");
-    background-size: cover;
-    background-position-y: -200px;
-}
-
-
-.container-termo {
-    background-image: linear-gradient(to right, hsl(208, 90%, 88%), #fff,  hsl(208, 90%, 88%)); /*cor do container */
-    width: 600px; /* tamanho do container */
-    margin-left: auto; 
-    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
-    padding: 35px; /* espaçamento */
-    margin-top: 3vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
-    border-radius: 4px 145px; /* arrendoda as bordas */
-    text-align: center; /*alinhar texto no centro */
-    border:10px solid #042848; /* cor da borda */
-    font-size: 1.2rem;
+  background-image: url("../img/2927262.jpg");
+  background-size: cover;
+  background-position-y: -200px;
 }
 
 h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  padding: 12px;
 }
 
 .termo p {
-    text-align: justify;
-    padding: 12px;
+  text-align: justify;
+  padding: 12px;
 }
+/*# sourceMappingURL=style.css.map */
