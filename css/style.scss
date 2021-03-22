@@ -33,16 +33,20 @@ $cor_link_termo: #042848;
     margin-top: 3vh; /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
 }
 
-
-/* Configuração Geral */
-
-* {
+%config_geral {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
     color: $cor_texto;
     border: none;
+}
+
+
+/* Configuração Geral */
+
+* {
+    @extend %config_geral;
 } 
 
 body {

@@ -29,7 +29,6 @@
   /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
 }
 
-/* Configuração Geral */
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +39,7 @@
   border: none;
 }
 
+/* Configuração Geral */
 body {
   background-image: url("../img/2927262.jpg");
   background-size: cover;
