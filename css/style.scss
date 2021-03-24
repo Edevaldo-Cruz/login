@@ -9,6 +9,7 @@ $cor_borda:  #042848;
 $cor_hover_botao: #1b223c;
 $cor_fonte_rede_social: #fff;
 $cor_link_termo: #042848;
+$cor_botao: #91d2e7, #d4e8f5, #87CEEB;
 
 %container_padrao {
     background-image: linear-gradient(to right, $cor_container);    
@@ -47,7 +48,24 @@ $cor_link_termo: #042848;
 
 * {
     @extend %config_geral;
-} 
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
 
 body {
     background-image: url("../img/2927262.jpg");
@@ -75,6 +93,11 @@ a:hover {
     margin-top: 10vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
 }
 
+.titulo-login {
+    text-align: left;
+}
+
+
 /* formulario */
 
 form {
@@ -87,7 +110,6 @@ label, input {
     border-radius: 20px;
     display: block;
     width: 100%;
-    text-align: left;
 }
 
 label {
@@ -120,13 +142,14 @@ input[type="submit"] {
     border-radius: 20px;
     margin-top: 30px;
     color: $cor_fundo_formulario;
-    background-color: $azul_padrao;
+    background-image: linear-gradient(45deg,#4169E1,#B0C3Dd, #B0C4DE,#4169E1);
     cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
-    background-color: $cor_hover_botao;
-    transition: .5;    
+    background-image: linear-gradient(45deg, #B0C4DE,#4169E1,#5189E6, #B0C4DE);
+    transition: 1; 
 }
 
 /* redes social*/
@@ -199,7 +222,7 @@ input[type="submit"]:hover {
     @extend %formulario
 }
     
-a {
+.termo-a {
     font-size: 1.2rem;
     color: $cor_link_termo;
     text-decoration: underline;
@@ -209,14 +232,6 @@ a {
 #agreement, #agreement-label {
     display: inline-block;
     width: auto;
-}
-
-/* Pagina Esqueci minha senha */
-
-.esqueci {   
-    background-image: url("../img/esqueci.png");
-    background-size: cover;
-    background-position-y: -20px;
 }
 
 /* Pagina Termo*/
@@ -243,3 +258,46 @@ h2 {
     text-align: justify;
     padding: 12px;
 }
+
+/* Pagina Esqueci minha senha */
+
+.container-esqueci {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh;
+    padding: 50px 80px;
+}
+
+.texto-esqueci {
+    margin: 25px 5px;
+}
+
+.botoes-esqueci {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Pagina Recuperação */
+
+.container-recuperacao {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh;
+    padding: 50px 80px;
+}
+
+.titulo-recuperacao {
+    margin: 15px;
+}
+
+/* Pagina Bem-Vindo */
+
+.bem-vindo {
+    background-image: url(../img/bem-vindo.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}
+

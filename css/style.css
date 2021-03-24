@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#login-container, #main-container, .container-termo {
+#login-container, #main-container, .container-termo, .container-esqueci, .container-recuperacao {
   background-image: -webkit-gradient(linear, left top, right top, from(#c5e2fc), color-stop(#fff), to(#c5e2fc));
   background-image: linear-gradient(to right, #c5e2fc, #fff, #c5e2fc);
   margin-left: auto;
@@ -40,6 +40,24 @@
 }
 
 /* Configuração Geral */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
 body {
   background-image: url("../img/2927262.jpg");
   background-size: cover;
@@ -65,6 +83,10 @@ a:hover {
   /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
 }
 
+.titulo-login {
+  text-align: left;
+}
+
 /* formulario */
 form {
   margin-top: 30px;
@@ -75,7 +97,6 @@ label, input {
   border-radius: 20px;
   display: block;
   width: 100%;
-  text-align: left;
 }
 
 label {
@@ -107,14 +128,14 @@ input[type="submit"] {
   border-radius: 20px;
   margin-top: 30px;
   color: #FFF;
-  background-color: #08558b;
+  background-image: linear-gradient(45deg, #4169E1, #B0C3Dd, #B0C4DE, #4169E1);
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #1b223c;
-  -webkit-transition: .5;
-  transition: .5;
+  background-image: linear-gradient(45deg, #B0C4DE, #4169E1, #5189E6, #B0C4DE);
+  -webkit-transition: 1;
+  transition: 1;
 }
 
 /* redes social*/
@@ -170,7 +191,7 @@ input[type="submit"]:hover {
   position: relative;
 }
 
-a {
+.termo-a {
   font-size: 1.2rem;
   color: #042848;
   text-decoration: underline;
@@ -180,13 +201,6 @@ a {
 #agreement, #agreement-label {
   display: inline-block;
   width: auto;
-}
-
-/* Pagina Esqueci minha senha */
-.esqueci {
-  background-image: url("../img/esqueci.png");
-  background-size: cover;
-  background-position-y: -20px;
 }
 
 /* Pagina Termo*/
@@ -205,5 +219,42 @@ h2 {
 .termo p {
   text-align: justify;
   padding: 12px;
+}
+
+/* Pagina Esqueci minha senha */
+.container-esqueci {
+  width: 400px;
+  margin-top: 10vh;
+  padding: 50px 80px;
+}
+
+.texto-esqueci {
+  margin: 25px 5px;
+}
+
+.botoes-esqueci {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pagina Recuperação */
+.container-recuperacao {
+  width: 400px;
+  margin-top: 10vh;
+  padding: 50px 80px;
+}
+
+.titulo-recuperacao {
+  margin: 15px;
+}
+
+/* Pagina Bem-Vindo */
+.bem-vindo {
+  background-image: url(../img/bem-vindo.jpg);
+  background-size: cover;
+  background-position-y: -200px;
 }
 /*# sourceMappingURL=style.css.map */
